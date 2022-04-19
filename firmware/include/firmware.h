@@ -4,7 +4,8 @@
 // Implemented in leds.cpp
 enum LEDMode {
     MIN = 0,
-    RAINBOW = 1
+    DEFAULT = 1,
+    MAX = 2
 };
 
 extern LEDMode mode;
@@ -12,6 +13,7 @@ extern int brightness;
 extern bool leds_on;
 
 void setupLeds(void);
+void paintLeds(void);
 void updateLeds(void);
 
 // Implemented in encoder.cpp
