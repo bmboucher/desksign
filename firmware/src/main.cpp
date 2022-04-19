@@ -1,9 +1,15 @@
 #include <Arduino.h>
 
+#include "firmware.h"
+
 void setup() {
-  // put your setup code here, to run once:
+  setupEncoder();
+  setupTouch();
+  setupLeds();
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  updateEncoder();
+  updateTouch();
+  updateLeds();
 }
